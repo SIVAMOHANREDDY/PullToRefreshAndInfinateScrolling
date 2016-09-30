@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="PullToRefresh.PullToRefresh" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="19" />
+  <!--<application android:label="PullToRefresh"
+               android:icon="@drawable/Icon"
+               android:theme="@android:style/Theme.Material.Light"></application>-->
+  <application android:label="PullToRefresh" android:icon="@drawable/icon" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="android.app.Application" android:allowBackup="true">
+    <activity android:icon="@drawable/icon" android:label="PullToRefresh" android:name="md5a8bf91efb55b1e1ad371b1c56b404116.PullToRefreshActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="PullToRefresh.PullToRefresh.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>
